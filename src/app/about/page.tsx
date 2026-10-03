@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <article className="mx-auto max-w-6xl px-5 pt-16 pb-8 sm:px-8 sm:pt-20">
+    <article className="mx-auto max-w-3xl px-5 pt-16 pb-8 sm:px-8 sm:pt-20">
       <div className="max-w-3xl">
         <p className="label-caps mb-4">Identity</p>
         <h1 className="text-4xl leading-tight sm:text-5xl">
@@ -32,7 +32,7 @@ export default function AboutPage() {
         alt="Zoë Harries of Impact Zones on a BNEW Barcelona panel on FDI and special economic zones"
         className="mt-12 aspect-[16/9] w-full"
         imageClassName="object-cover object-[center_42%]"
-        sizes="(min-width: 1024px) 1152px, 100vw"
+        sizes="(min-width: 768px) 768px, 100vw"
       />
 
       <section className="mt-16 max-w-3xl">
