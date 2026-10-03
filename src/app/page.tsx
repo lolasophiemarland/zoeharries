@@ -51,11 +51,11 @@ export default function HomePage() {
       </section>
 
       <section className="border-y border-line bg-card/70">
-        <div className="mx-auto grid max-w-6xl gap-8 px-5 py-12 sm:grid-cols-2 sm:px-8 lg:grid-cols-4">
+        <div className="mx-auto grid max-w-6xl grid-cols-2 gap-x-6 gap-y-8 px-5 py-12 sm:px-8 lg:grid-cols-5 lg:gap-x-4">
           {STATS.map((stat) => (
             <div key={stat.label}>
-              <p className="text-2xl font-light text-graphite">{stat.value}</p>
-              <p className="mt-2 text-xs uppercase tracking-label text-subtle">{stat.label}</p>
+              <p className="text-base font-light leading-none text-muted lg:whitespace-nowrap">{stat.value}</p>
+              <p className="mt-2 text-[11px] uppercase tracking-[0.06em] text-subtle">{stat.label}</p>
             </div>
           ))}
         </div>
