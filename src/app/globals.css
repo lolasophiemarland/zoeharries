@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #f7f5f1;
+  --foreground: #2c2c2a;
+}
+
+body {
+  color: var(--foreground);
+  background-color: var(--background);
+  background-image: url("/textures/topo.svg?v=2");
+  background-size: 920px 920px;
+  background-repeat: repeat;
+}
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading font-light tracking-heading text-foreground;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-sm bg-graphite px-5 py-2.5 text-xs font-medium uppercase tracking-label text-white transition-opacity hover:opacity-85;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center rounded-sm border border-graphite bg-transparent px-5 py-2.5 text-xs font-medium uppercase tracking-label text-graphite transition-opacity hover:opacity-80;
+  }
+
+  .card-surface {
+    @apply rounded-sm border border-line bg-card text-foreground;
+  }
+
+  .label-caps {
+    @apply text-[11px] font-medium uppercase tracking-label text-subtle;
+  }
+
+  .prose-muted {
+    @apply text-[15px] leading-relaxed text-muted;
+  }
+
+  .photo-frame {
+    @apply overflow-hidden rounded-sm border border-line bg-card;
+  }
+
+  .photo-frame img {
+    filter: saturate(0.72) contrast(1.04);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
