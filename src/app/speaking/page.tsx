@@ -45,24 +45,22 @@ export default function SpeakingPage() {
 
       <section className="mt-16">
         <h2 className="text-2xl">Engagement history</h2>
-        <div className="mt-6 overflow-x-auto">
-          <table className="w-full min-w-[28rem] text-left text-sm">
-            <thead>
-              <tr className="label-caps border-b border-line">
-                <th className="pb-3 font-medium">Event</th>
-                <th className="pb-3 font-medium">Location</th>
+        <table className="mt-6 w-full table-fixed text-left text-sm">
+          <thead>
+            <tr className="label-caps border-b border-line">
+              <th className="pb-3 pr-4 font-medium">Event</th>
+              <th className="w-32 pb-3 font-medium">Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            {ENGAGEMENTS.map((row) => (
+              <tr key={row.event} className="border-b border-line align-top">
+                <td className="py-3.5 pr-4 text-graphite">{row.event}</td>
+                <td className="py-3.5 text-muted">{row.location}</td>
               </tr>
-            </thead>
-            <tbody>
-              {ENGAGEMENTS.map((row) => (
-                <tr key={row.event} className="border-b border-line">
-                  <td className="py-3.5 text-graphite">{row.event}</td>
-                  <td className="py-3.5 text-muted">{row.location}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+            ))}
+          </tbody>
+        </table>
       </section>
 
       <section className="mt-16 grid gap-10 lg:grid-cols-2">
