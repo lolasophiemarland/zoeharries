@@ -35,14 +35,27 @@ export const CREDENTIALS = [
 
 export const ORGANISATION_LOGOS = [
   { name: "Economic Cities and Special Zones Authority", src: "/logos/organisations/ecza.png" },
+  { name: "Konza Technopolis Development Authority", src: "/logos/organisations/konza.png" },
   { name: "Landsvirkjun", src: "/logos/organisations/landsvirkjun.svg" },
   { name: "Business Finland", src: "/logos/organisations/business-finland.svg" },
-  { name: "Biopharma Crescent", src: "/logos/organisations/biopharma-crescent.png" },
+  { name: "Jordan Investment Commission", src: "/logos/organisations/jordan-investment.png" },
+  { name: "Biopharma Crescent", src: "/logos/organisations/biopharma-crescent.webp" },
   { name: "Masdar City Free Zone", src: "/logos/organisations/masdar-city-free-zone.svg" },
   { name: "Heidrick & Struggles", src: "/logos/organisations/heidrick.svg" },
   { name: "SAIF Zone", src: "/logos/organisations/saif-zone.png" },
   { name: "Sharjah Publishing City Free Zone", src: "/logos/organisations/spcfz.webp" },
   { name: "BEDB Brunei", src: "/logos/organisations/bedb-investbn.png" },
+  { name: "Public Investment Fund", src: "/logos/organisations/pif.svg" },
+  { name: "World Free Zones Organization", src: "/logos/organisations/wfzo.png", onDark: true },
+  { name: "Sharjah Ports, Customs and Free Zones Authority", src: "/logos/organisations/spcfza.png" },
+  { name: "InnoEnergy", src: "/logos/organisations/innoenergy.png" },
+  { name: "World Bank", src: "/logos/organisations/world-bank.svg" },
+  { name: "Universal Postal Union", src: "/logos/organisations/upu.png" },
+  { name: "AmCham Jordan", src: "/logos/organisations/amcham-jordan.png" },
+  { name: "WAIPA", src: "/logos/organisations/waipa.png" },
+  { name: "Financial Times (fDi Intelligence)", src: "/logos/organisations/ft-masthead.svg" },
+  { name: "Investment Monitor", src: "/logos/organisations/investment-monitor.png" },
+  { name: "Annual Investment Meeting (AIM Congress)", src: "/logos/organisations/aim.png" },
 ] as const;
 
 export const WHY_ME =

@@ -125,13 +125,17 @@ export default function AboutPage() {
             ))}
           </ul>
         </div>
-        <ul className="mt-8 grid max-w-3xl grid-cols-3 items-center gap-x-6 gap-y-7 sm:gap-x-10">
+        <ul className="mt-8 grid max-w-3xl grid-cols-2 items-center gap-x-6 gap-y-7 sm:grid-cols-3 sm:gap-x-10">
           {ORGANISATION_LOGOS.map((logo) => (
             <li key={logo.src} className="group flex h-10 items-center justify-center">
               <img
                 src={logo.src}
                 alt={logo.name}
-                className="max-h-7 w-auto max-w-full object-contain opacity-80 grayscale mix-blend-multiply transition duration-300 ease-out group-hover:opacity-100 group-hover:grayscale-0 group-hover:mix-blend-normal"
+                className={`max-h-8 w-auto max-w-full object-contain opacity-80 grayscale transition duration-300 ease-out group-hover:opacity-100 group-hover:grayscale-0 ${
+                  "onDark" in logo && logo.onDark
+                    ? "invert"
+                    : "mix-blend-multiply group-hover:mix-blend-normal"
+                }`}
               />
             </li>
           ))}
