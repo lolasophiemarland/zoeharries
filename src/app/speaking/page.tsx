@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function SpeakingPage() {
   return (
-    <div className="mx-auto max-w-5xl px-5 pt-16 pb-8 sm:px-8 sm:pt-20">
+    <div className="mx-auto max-w-6xl px-5 pt-16 pb-8 sm:px-8 sm:pt-20">
       <p className="label-caps mb-4">Speaking</p>
       <h1 className="max-w-3xl text-4xl leading-tight sm:text-5xl">
         Keynotes, panels and moderation on FDI, SEZs and cross-border investment.
@@ -25,11 +25,11 @@ export default function SpeakingPage() {
       </p>
 
       <Photo
-        src="/photos/zoe-harries-fdi-sez-conference-panel.jpg"
-        alt="Zoë Harries of Impact Zones on a conference panel on FDI and special economic zones"
+        src="/photos/zoe-harries-impact-zones-fdi-panel-speaking.jpg"
+        alt="Zoë Harries speaking on a panel as founder of Impact Zones FDI Advisory"
         className="mt-12 aspect-[16/9] w-full"
-        imageClassName="object-cover object-[center_28%]"
-        sizes="(min-width: 1024px) 960px, 100vw"
+        imageClassName="object-cover object-center"
+        sizes="(min-width: 1024px) 1152px, 100vw"
       />
 
       <section className="mt-16">

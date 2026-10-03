@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Photo } from "@/components/photo";
-import { CURIOSITIES, ESG, LEADERSHIP_STEPS, PLACES, PRACTICE_AREAS, SUPERPOWERS } from "@/lib/site";
+import { CREDENTIALS, CURIOSITIES, ESG, LEADERSHIP_STEPS, ORGANISATION_LOGOS, PLACES, PRACTICE_AREAS, SUPERPOWERS, WHY_ME } from "@/lib/site";
 import { ImpactZonesMark } from "@/components/impact-zones-mark";
 
 export const metadata: Metadata = {
@@ -11,29 +11,31 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <article className="mx-auto max-w-3xl px-5 pt-16 pb-8 sm:px-8 sm:pt-20">
-      <p className="label-caps mb-4">Identity</p>
-      <h1 className="text-4xl leading-tight sm:text-5xl">
-        Humanitarian Capitalist. Global Connector. Opportunity Architect.
-      </h1>
-      <p className="prose-muted mt-6">
-        I build bridges between markets, cultures, governments and capital – translating between
-        different worlds to create opportunities that none could realize alone.
-      </p>
-      <p className="prose-muted mt-4">
-        My life has been about crossing borders. My work is about making them easier for opportunity
-        to cross.
-      </p>
+    <article className="mx-auto max-w-6xl px-5 pt-16 pb-8 sm:px-8 sm:pt-20">
+      <div className="max-w-3xl">
+        <p className="label-caps mb-4">Identity</p>
+        <h1 className="text-4xl leading-tight sm:text-5xl">
+          Humanitarian Capitalist. Global Connector. Opportunity Architect.
+        </h1>
+        <p className="prose-muted mt-6">
+          I build bridges between markets, cultures, governments and capital – translating between
+          different worlds to create opportunities that none could realize alone.
+        </p>
+        <p className="prose-muted mt-4">
+          My life has been about crossing borders. My work is about making them easier for opportunity
+          to cross.
+        </p>
+      </div>
 
       <Photo
         src="/photos/zoe-harries-impact-zones-bnew-fdi-panel.jpg"
         alt="Zoë Harries of Impact Zones on a BNEW Barcelona panel on FDI and special economic zones"
         className="mt-12 aspect-[16/9] w-full"
         imageClassName="object-cover object-[center_42%]"
-        sizes="(min-width: 768px) 768px, 100vw"
+        sizes="(min-width: 1024px) 1152px, 100vw"
       />
 
-      <section className="mt-16">
+      <section className="mt-16 max-w-3xl">
         <h2 className="text-2xl">Purpose</h2>
         <p className="prose-muted mt-4">
           To connect people, markets and capital across borders, creating opportunity, freedom and
@@ -42,6 +44,7 @@ export default function AboutPage() {
       </section>
 
       <section className="mt-16">
+        <div className="max-w-3xl">
         <h2 className="text-2xl">Humanitarian Capitalism – My Thesis</h2>
         <p className="mt-4 text-xl font-light text-graphite">
           Capitalism with purpose, not capitalism without profit.
@@ -58,6 +61,7 @@ export default function AboutPage() {
         <p className="prose-muted mt-4">
           That&apos;s how I read ESG in an FDI and SEZ context, too – not as a compliance checklist:
         </p>
+        </div>
         <div className="mt-6 grid gap-4 sm:grid-cols-3">
           {ESG.map((item) => (
             <article key={item.title} className="card-surface p-5">
@@ -66,13 +70,13 @@ export default function AboutPage() {
             </article>
           ))}
         </div>
-        <blockquote className="mt-8 border-l border-graphite pl-5 text-lg font-light text-graphite">
+        <blockquote className="mt-8 max-w-3xl border-l border-graphite pl-5 text-lg font-light text-graphite">
           Sustainability does not attract investment because it is good. It attracts investment when
           it makes a location more competitive.
         </blockquote>
       </section>
 
-      <section className="mt-16">
+      <section className="mt-16 max-w-3xl">
         <h2 className="text-2xl">Where This Shows Up</h2>
         <p className="mt-5 flex flex-wrap gap-2">
           {PRACTICE_AREAS.map((area) => (
@@ -90,11 +94,12 @@ export default function AboutPage() {
       </section>
 
       <section className="mt-16">
+        <div className="max-w-3xl">
         <h2 className="text-2xl">A Global Perspective</h2>
         <p className="prose-muted mt-4">
           Born in South Africa, raised in the Netherlands, and having lived and worked across the
-          Netherlands, Belgium, South Africa, the UAE, Saudi Arabia and Brunei, I&apos;m based today
-          between Dubai and Zürich.
+          Netherlands, Belgium, South Africa, the UAE, Saudi Arabia and Brunei, I&apos;m based between
+          Dubai + Zürich.
         </p>
         <p className="prose-muted mt-4">
           Living across Africa, Europe, the Middle East and Southeast Asia has taught me to look at
@@ -109,9 +114,36 @@ export default function AboutPage() {
             </span>
           ))}
         </p>
+        </div>
+        <div className="mt-10 max-w-3xl">
+          <p className="label-caps">Credentials</p>
+          <ul className="mt-4 divide-y divide-line border-y border-line">
+            {CREDENTIALS.map((item) => (
+              <li key={item} className="py-3 text-sm text-graphite">
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+        <ul className="mt-8 grid max-w-3xl grid-cols-3 items-center gap-x-6 gap-y-7 sm:gap-x-10">
+          {ORGANISATION_LOGOS.map((logo) => (
+            <li key={logo.src} className="group flex h-10 items-center justify-center">
+              <img
+                src={logo.src}
+                alt={logo.name}
+                className="max-h-7 w-auto max-w-full object-contain opacity-80 grayscale mix-blend-multiply transition duration-300 ease-out group-hover:opacity-100 group-hover:grayscale-0 group-hover:mix-blend-normal"
+              />
+            </li>
+          ))}
+        </ul>
       </section>
 
-      <section className="mt-16 border-y border-line py-12">
+      <section className="mt-16 max-w-3xl">
+        <h2 className="text-2xl">Why me</h2>
+        <p className="prose-muted mt-4">{WHY_ME}</p>
+      </section>
+
+      <section className="mt-16 max-w-3xl border-y border-line py-12">
         <p className="label-caps mb-4">Impact Zones</p>
         <ImpactZonesMark />
         <p className="prose-muted mt-5">
@@ -120,7 +152,7 @@ export default function AboutPage() {
         </p>
       </section>
 
-      <section className="mt-16">
+      <section className="mt-16 max-w-3xl">
         <h2 className="text-2xl">Ideas &amp; Influence</h2>
         <p className="prose-muted mt-4">
           My work isn&apos;t only about delivering projects. I want to shape the conversation around
@@ -140,7 +172,7 @@ export default function AboutPage() {
         </p>
       </section>
 
-      <section className="mt-16">
+      <section className="mt-16 max-w-3xl">
         <h2 className="text-2xl">How I Lead</h2>
         <p className="mt-4 flex flex-wrap gap-2">
           {SUPERPOWERS.map((item) => (
@@ -178,7 +210,7 @@ export default function AboutPage() {
         </p>
       </section>
 
-      <section className="mt-16">
+      <section className="mt-16 max-w-3xl">
         <h2 className="text-2xl">Leadership Mantra</h2>
         <p className="mt-4 text-xl font-light text-graphite">
           See possibility. Connect capital and opportunity. Mobilize action. Create prosperity.
@@ -186,7 +218,7 @@ export default function AboutPage() {
         </p>
       </section>
 
-      <section className="mt-16">
+      <section className="mt-16 max-w-3xl">
         <h2 className="text-2xl">What Keeps Me Curious</h2>
         <p className="mt-5 flex flex-wrap gap-2">
           {CURIOSITIES.map((item) => (
@@ -202,7 +234,7 @@ export default function AboutPage() {
         </p>
       </section>
 
-      <section className="mt-16">
+      <section className="mt-16 max-w-3xl">
         <h2 className="text-2xl">Legacy</h2>
         <blockquote className="mt-4 text-xl font-light leading-snug text-graphite">
           I saw possibility where others saw barriers. I connected people, markets and capital across

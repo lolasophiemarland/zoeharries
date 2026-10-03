@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <div className="mx-auto max-w-5xl px-5 pt-16 pb-8 sm:px-8 sm:pt-20">
+    <div className="mx-auto max-w-6xl px-5 pt-16 pb-8 sm:px-8 sm:pt-20">
       <p className="label-caps mb-4">Contact</p>
       <h1 className="text-4xl sm:text-5xl">Get in touch</h1>
       <p className="prose-muted mt-5 max-w-xl">

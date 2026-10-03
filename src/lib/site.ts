@@ -5,7 +5,7 @@ export const SITE = {
   linkedin: "https://www.linkedin.com/in/zoeharries/",
   substack: "https://zoeharries.substack.com",
   impactZones: "https://www.impactzonefdi.com",
-  identity: "Humanitarian Capitalist. Global Connector. Opportunity Architect.",
+  identity: "Global Connector. Opportunity Architect.",
   kicker: "Global Connector. Opportunity Architect.",
 } as const;
 
@@ -17,21 +17,48 @@ export const NAV = [
 ] as const;
 
 export const STATS = [
-  { value: "20+", label: "Years in FDI & SEZ" },
-  { value: "$20B+", label: "Economic zone investment" },
+  { value: "25+", label: "Years in FDI & SEZ" },
+  { value: "US$20bn", label: "PIF-backed SEZ" },
   { value: "140+", label: "Investor agreements" },
+  { value: "US$450m", label: "Anchor commitments" },
   { value: "GCC · Europe · APAC", label: "Markets connected" },
 ] as const;
+
+export const CREDENTIALS = [
+  "Saudi Premium Residency",
+  "Member of The Boardroom Zurich",
+  "Founding member of PLAYBOOK (Bahrain and Riyadh)",
+  // Revisit: member vs founding member of Capital Club Dubai is unresolved.
+  "Member of Capital Club Dubai",
+  "Lecturer on FDI and SEZs, Nyenrode Business University and the American University in the Emirates",
+] as const;
+
+export const ORGANISATION_LOGOS = [
+  { name: "Economic Cities and Special Zones Authority", src: "/logos/organisations/ecza.png" },
+  { name: "Landsvirkjun", src: "/logos/organisations/landsvirkjun.svg" },
+  { name: "Business Finland", src: "/logos/organisations/business-finland.svg" },
+  { name: "Biopharma Crescent", src: "/logos/organisations/biopharma-crescent.png" },
+  { name: "Masdar City Free Zone", src: "/logos/organisations/masdar-city-free-zone.svg" },
+  { name: "Heidrick & Struggles", src: "/logos/organisations/heidrick.svg" },
+  { name: "SAIF Zone", src: "/logos/organisations/saif-zone.png" },
+  { name: "Sharjah Publishing City Free Zone", src: "/logos/organisations/spcfz.webp" },
+  { name: "BEDB Brunei", src: "/logos/organisations/bedb-investbn.png" },
+] as const;
+
+export const WHY_ME =
+  "I bring 25+ years in economic zones and investment attraction, with more than six years of established presence and strong relationships in the region. I led investment attraction for a US$20 billion PIF-backed special economic zone in Saudi Arabia. I have held leadership roles with Masdar City Free Zone in Abu Dhabi and the World Free Zones Organization in Dubai, and most recently served as Interim Country Head for Brunei Economic City SEZ. I contribute to industry discussions as a keynote speaker and author, through fDi Intelligence (Financial Times), Investment Monitor and the Annual Investment Meeting (AIM) Congress. I am a member of the Boardroom in Zurich and the Capital Club in Dubai, and a founding member of PLAYBOOK in Bahrain and Riyadh. I hold Dutch and South African citizenship, UAE residency and Saudi Premium Residency. I also developed the ANCHOR Framework™ on what makes capital, talent and enterprise choose to stay in a place.";
 
 export const ROLE_CARDS = [
   {
     title: "Executive & Strategist",
-    href: "/about",
+    href: "/contact",
+    cta: "Work With Zoë | Contact",
     body: "Founder and Managing Director of Impact Zones FDI Advisory, leading greenfield SEZ development, investment attraction and institutional design in markets where the playbook doesn't exist yet. I turn ambitious economic visions into governance frameworks, regulatory structures and financial models that actually get built.",
   },
   {
     title: "Speaker",
-    href: "/speaking",
+    href: "/contact",
+    cta: "Invite Zoë to Speak | Contact",
     body: "A sought-after voice on FDI, Special Economic Zones and cross-border investment, speaking at platforms including AIM Congress, the World Free Zones Organization, Financial Times events and BNEW Barcelona. I challenge the assumption that commercial returns and positive impact are a trade-off.",
   },
 ] as const;
@@ -80,6 +107,34 @@ export const EXPLORE = [
 ] as const;
 
 export const IDEAS_PHOTOS = [
+  {
+    src: "/photos/zoe-harries-wsw-language-of-investors-audience.jpg",
+    alt: "Zoë Harries on the Language of Investors panel at the Women's Sharing Wealth Summit, powered by UBS",
+  },
+  {
+    src: "/photos/zoe-harries-wsw-panel-speaking.jpg",
+    alt: "Zoë Harries speaking on the Language of Investors panel at the Women's Sharing Wealth Summit",
+  },
+  {
+    src: "/photos/zoe-harries-wsw-panel-discussion.jpg",
+    alt: "Zoë Harries with fellow speakers on the Language of Investors panel",
+  },
+  {
+    src: "/photos/zoe-harries-wsw-panel-from-audience.jpg",
+    alt: "Zoë Harries speaking from the stage at the Language of Investors panel",
+  },
+  {
+    src: "/photos/zoe-harries-wsw-panel-speaking-close.jpg",
+    alt: "Zoë Harries speaking as founder of Impact Zones FDI Advisory",
+  },
+  {
+    src: "/photos/zoe-harries-wsw-panel-with-moderator.jpg",
+    alt: "Zoë Harries in conversation with the moderator on the Language of Investors panel",
+  },
+  {
+    src: "/photos/zoe-harries-wsw-summit-group.jpg",
+    alt: "Zoë Harries with participants at the Women's Sharing Wealth Summit",
+  },
   {
     src: "/photos/zoe-harries-sez-investment-destination-planning.jpg",
     alt: "Zoë Harries of Impact Zones reviewing an SEZ investment destination plan",

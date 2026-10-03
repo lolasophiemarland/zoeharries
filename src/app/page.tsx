@@ -27,16 +27,17 @@ export default function HomePage() {
           </div>
         </div>
         <Photo
-          src="/photos/zoe-harries-fdi-sez-keynote-speaking.jpg"
-          alt="Zoë Harries of Impact Zones giving a keynote on FDI and special economic zones"
+          src="/photos/zoe-harries-fdi-panel-conversation.jpg"
+          alt="Zoë Harries in conversation on stage during a panel"
           priority
           className="aspect-[4/3] w-full"
-          imageClassName="object-cover object-[center_18%]"
+          imageClassName="object-cover object-center"
           sizes="(min-width: 1024px) 560px, 100vw"
         />
       </section>
 
-      <section className="mx-auto max-w-3xl px-5 py-16 sm:px-8">
+      <section className="mx-auto max-w-6xl px-5 py-16 sm:px-8">
+        <div className="max-w-3xl">
         <p className="label-caps mb-4">Intro</p>
         <blockquote className="text-2xl font-light leading-snug text-graphite sm:text-[1.7rem]">
           I build bridges between markets, cultures, governments and capital – translating between
@@ -46,6 +47,7 @@ export default function HomePage() {
           My life has been about crossing borders. My work is about making them easier for
           opportunity to cross.
         </p>
+        </div>
       </section>
 
       <section className="border-y border-line bg-card/70">
@@ -67,7 +69,7 @@ export default function HomePage() {
               <h2 className="text-2xl">{card.title}</h2>
               <p className="prose-muted mt-4 flex-1">{card.body}</p>
               <Link href={card.href} className="mt-6 text-xs font-medium uppercase tracking-label text-graphite">
-                Continue →
+                {card.cta}
               </Link>
             </article>
           ))}
